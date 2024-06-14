@@ -1,0 +1,15 @@
+**/.cloud/
+**/.secrets
+**/.storage/
+**/custom_components/
+**/deps/
+**/home-assistant.log*
+**/secrets.*
+**/themes/
+**/tts/
+**/www/
+**/zigbee.d*
+blueprints/
+home-assistant_*
+image/
+install.sh
