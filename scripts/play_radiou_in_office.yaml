@@ -1,0 +1,9 @@
+alias: Play RadioU in Office
+sequence:
+  - service: media_player.select_source
+    data:
+      source: RadioU
+    target:
+      entity_id: media_player.sonos_office
+mode: single
+icon: mdi:speaker-play

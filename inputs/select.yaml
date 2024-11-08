@@ -1,0 +1,43 @@
+#-
+#  _                   _                _           _
+# (_)_ __  _ __  _   _| |_     ___  ___| | ___  ___| |_ ___
+# | | '_ \| '_ \| | | | __|   / __|/ _ \ |/ _ \/ __| __/ __|
+# | | | | | |_) | |_| | |_    \__ \  __/ |  __/ (__| |_\__ \
+# |_|_| |_| .__/ \__,_|\__|___|___/\___|_|\___|\___|\__|___/
+#         |_|            |_____|
+#
+#-
+minimalist_ui_switch:
+  name: Select popup/view
+  options:
+    - light 1
+    - light 2
+    - mediaplayer 1
+    - mediaplayer 2
+    - climate 1
+    - climate 2
+    - power 1
+    - power 2
+    - livingroom
+
+recycle_pickup:
+  name: Recycle Pickup
+  options:
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+  initial: Wednesday
+  icon: mdi:delete-variant
+
+trash_pickup:
+  name: Trash Pickup
+  options:
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+  initial: Wednesday
+  icon: mdi:delete-variant

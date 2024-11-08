@@ -1,0 +1,5 @@
+zha:
+  device_config:
+    # Turn "light" of VZM35SN to a generic "switch" (endpoint 1)
+    04:87:27:ff:fe:19:41:f1-1: # Office Fan Switch
+      type: switch

@@ -1,0 +1,27 @@
+automation:
+  # Morning Entity Refresh - For all those sensors that need a little push
+  - id: daily_entity_refresh_morning
+    alias: Daily Entity Refresh - Morning
+    trigger:
+      - platform: time
+        at: "04:30:00"
+    action:
+      - service: homeassistant.update_entity
+        entity_id: sensor.today_is
+      - service: homeassistant.update_entity
+        entity_id: sensor.holiday
+
+  # Startup automatons to update some custom sensors due to new order of home assistant firing up
+  - id: startup_automations
+    alias: startup_automations
+    trigger:
+      platform: homeassistant
+      event: start
+    action:
+      - service: homeassistant.update_entity
+        entity_id: sensor.today_is
+      - service: homeassistant.update_entity
+        entity_id: sensor.holiday
+      - service: frontend.set_theme
+        data:
+          name: ios-dark-mode
