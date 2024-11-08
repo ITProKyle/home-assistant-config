@@ -14,6 +14,8 @@ repos:
       - id: check-json
       - id: check-merge-conflict
       - id: check-yaml
+        args:
+          - --unsafe
       - id: end-of-file-fixer
         exclude: \.HA_VERSION
       - id: file-contents-sorter
@@ -47,6 +49,10 @@ repos:
     hooks:
       - id: yamlfmt
         args: [--mapping, '2', --offset, '2', --sequence, '4']
+        exclude: |
+          (?x)^(
+            configuration\.yaml
+          )$
   - repo: https://github.com/executablebooks/mdformat
     rev: 0.7.18
     hooks:

@@ -1,0 +1,21 @@
+{
+    "tasks": [
+        {
+            "command": "${command:vscode-home-assistant.automationReload}",
+            "group": {
+                "isDefault": true,
+                "kind": "build"
+            },
+            "icon": {
+                "color": "terminal.ansiBlue",
+                "id": "refresh"
+            },
+            "isBackground": true,
+            "label": "Reload HASS Automations & Blueprints",
+            "presentation": {
+                "echo": false,
+                "reveal": "never"
+            }
+        }
+    ]
+}

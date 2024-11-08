@@ -1,0 +1,7 @@
+  - platform: time_date # https://www.home-assistant.io/integrations/time_date/
+    display_options:
+      - "time"
+      - "date"
+      - "date_time"
+      - "time_date"
+      - "time_utc"
