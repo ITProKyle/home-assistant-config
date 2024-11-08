@@ -1,9 +1,11 @@
 **/.cloud/
 **/.secrets
 **/.storage/
+**/.venv/
 **/custom_components/
 **/deps/
 **/home-assistant.log*
+**/node_modules/
 **/secrets.*
 **/themes/
 **/tts/
